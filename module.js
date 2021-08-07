@@ -12,7 +12,7 @@ Purpose: Create the genesis block and create the blockchain object
 Input: all the variables needed for the block constructor 
 Output: none (global variables for previous block and blockchain are updated )
 */
-function genesis_step(ip, api_endpt, query_string, method_type, prev_block_temp, next_block) {
+function genesis_step(ip, api_endpt, query_string, method_type) {
 
     //var genesis_block = new objects.Block(ex_ip, ex_api_endpt, ex_query_string, ex_method_type, null, null);
     //var curr_blockchain = new objects.Blockchain(genesis_block, null, 1);
