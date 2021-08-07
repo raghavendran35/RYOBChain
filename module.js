@@ -25,8 +25,8 @@ Purpose: Build a new block to be added, add it to the chain, and return newly cr
 Input: blockchain element, and all the variables needed for the block constructor 
 Output: new block that was added (global variable for previous block gets updated )
 */
-function build_chain(blockchain, ip, api_endpt, query_string, method_type, prev_block_temp_1, next_block_1){
-    var next_block_1 = new objects.Block(ip, api_endpt, query_string, method_type, prev_block_temp_1, null);
+function build_chain(blockchain, ip, api_endpt, query_string, method_type, prev_block_temp_1){
+    var next_block_1 = new objects.Block(ip, api_endpt, query_string, method_type, prev_block_temp_1);
     blockchain.add_block(next_block_1);
     blockchain.last_block.prev_block = prev_block;
     prev_block = next_block_1;
@@ -103,7 +103,7 @@ build_chain(blockchain, ip2, api_endpt2, query_string2, method_type2, prev_block
 
 
 //blockchain.print_obj();
-latest_to_oldest_traversal(blockchain);
-oldest_to_latest_traversal(blockchain);
+//latest_to_oldest_traversal(blockchain);
+//oldest_to_latest_traversal(blockchain);
 
 
