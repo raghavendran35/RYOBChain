@@ -1,0 +1,24 @@
+{
+  "name": "ryobchain",
+  "version": "1.0.0",
+  "description": "blockchain for api logging",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^13.1.8"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghavendran35/RYOBChain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raghavendran35/RYOBChain/issues"
+  },
+  "homepage": "https://github.com/raghavendran35/RYOBChain#readme"
+}
