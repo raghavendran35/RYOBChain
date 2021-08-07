@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "blockchain for api logging",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
   "devDependencies": {
     "electron": "^13.1.8"
   },
