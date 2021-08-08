@@ -1,7 +1,7 @@
 const uuid = require('uuid');
 
 class Block {
-  constructor(ip, api_endpt, query_string, method_type, prev_block, next_block) {
+  constructor(ip, api_endpt, query_string, method_type, prev_block) {
   	this.block_id = uuid.v4();
     this.ip = ip;
     this.api_endpt = api_endpt;
@@ -9,10 +9,9 @@ class Block {
     this.method_type = method_type; 
     this.timestmp = Date.now();
     this.prev_block = prev_block;
-    this.next_block = next_block;
     this.add_metadata = new Map();
   }
-
+  /*
   make_connection_prev(prev_block)
   {
     this.prev_block = prev_block;
@@ -22,7 +21,7 @@ class Block {
   {
     this.next_block = new_block;
   }
-
+  */
   print_obj()
   {
     console.log(JSON.stringify(this, null, 4));

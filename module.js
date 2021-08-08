@@ -79,7 +79,7 @@ const method_type = "GET";
 const prev_block_temp = null;
 const next_block = null;
 
-genesis_step(ip, api_endpt, query_string, method_type, prev_block_temp, next_block);
+genesis_step(ip, api_endpt, query_string, method_type, prev_block_temp);
 
 // testing for part 2
 const ip1 = "localhost:3000";
@@ -89,7 +89,7 @@ const method_type1 = "GET";
 const prev_block_temp_1 = null;
 const next_block_1 = null;
 
-build_chain(blockchain, ip1, api_endpt1, query_string1, method_type1, prev_block_temp_1, next_block_1);
+build_chain(blockchain, ip1, api_endpt1, query_string1, method_type1, prev_block_temp_1);
 // testing for part 3
 const ip2 = "localhost:3000";
 const api_endpt2="/api/v1.0/getThis";
@@ -98,11 +98,10 @@ const method_type2 = "GET";
 const prev_block_temp_2 = null;
 const next_block_2 = null;
 
-build_chain(blockchain, ip2, api_endpt2, query_string2, method_type2, prev_block_temp_2, next_block_2);
+build_chain(blockchain, ip2, api_endpt2, query_string2, method_type2, prev_block_temp_2);
 
 
 
-//blockchain.print_obj();
 //latest_to_oldest_traversal(blockchain);
 //oldest_to_latest_traversal(blockchain);
 
