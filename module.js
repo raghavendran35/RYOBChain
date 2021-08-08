@@ -77,7 +77,6 @@ const api_endpt="/api/v1.0/getThis";
 const query_string = "&this=me&blah=blooh";
 const method_type = "GET";
 const prev_block_temp = null;
-const next_block = null;
 
 genesis_step(ip, api_endpt, query_string, method_type, prev_block_temp);
 
@@ -87,7 +86,7 @@ const api_endpt1="/api/v1.0/getThis";
 const query_string1 = "&this=me&blah=blooh";
 const method_type1 = "GET";
 const prev_block_temp_1 = null;
-const next_block_1 = null;
+
 
 build_chain(blockchain, ip1, api_endpt1, query_string1, method_type1, prev_block_temp_1);
 // testing for part 3
@@ -96,7 +95,7 @@ const api_endpt2="/api/v1.0/getThis";
 const query_string2 = "&this=me&blah=blooh";
 const method_type2 = "GET";
 const prev_block_temp_2 = null;
-const next_block_2 = null;
+
 
 build_chain(blockchain, ip2, api_endpt2, query_string2, method_type2, prev_block_temp_2);
 
