@@ -9,11 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="module.js"></script>
+    <script type="text/javascript" src="helpers.js"></script>
     <script type="text/javascript">
     if (localStorage.getItem("setup")!=="complete")
     {
-      setInitialVariables();
+      setObj();
     }
     </script>
   </head>
@@ -30,20 +30,12 @@
         <div class="col-1 vl">
         </div>
         <div class="col-8">
-          <div class="row">
-            <h1>Run Your Own Blockchain</h1>
-          </div>
-          <button onclick="localStorage.clear()">Clear Chain</button>
+          <h1>Run Your Own Blockchain</h1>
           <script type="text/javascript">
-          console.log(JSON.parse(localStorage.getItem("prev_block")));
-          console.log(JSON.parse(localStorage.getItem("blockchain")));
-          </script>
+          console.log('retrievedObject: ',JSON.stringify(localStorage.getItem("testObject"))); doFoo();</script>
         </div>
       </div>
     </div>
-    <script>
-        require('./renderer.js');
-    </script>
 
   </body>
 </html>
