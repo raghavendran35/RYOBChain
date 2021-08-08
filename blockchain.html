@@ -1,0 +1,43 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>Run Your Own Blockchain!</title>
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="module.js"></script>
+    <script type="text/javascript">
+    if (localStorage.getItem("setup")!=="complete")
+    {
+      setInitialVariables();
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="container col-3">
+          <a href="index.html" class="btn input-block-level text-white">Home</a>
+          <a href="blockchain.html" class="btn input-block-level text-white">Blockchain</a>
+          <a href="settings.html" class="btn input-block-level text-white">Settings</a>
+          <a href="help.html" class="btn input-block-level text-white">Help</a>
+
+        </div>
+        <div class="col-1 vl">
+        </div>
+        <div class="col-8">
+          <h1>Run Your Own Blockchain</h1>
+          <script type="text/javascript">
+          console.log(JSON.parse(localStorage.getItem("prev_block")));
+          console.log(JSON.parse(localStorage.getItem("blockchain")));
+          </script>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
